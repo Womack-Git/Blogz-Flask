@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>blogz</title>
+    <!--<link href="style.css" rel="stylesheet" type="text/css" />-->
+  </head>
+
+  <header>
+    <a href="https://Blogz.awomack333.repl.co">Home Page</a>&nbsp;&nbsp;&nbsp;
+    <a href="https://Blogz.awomack333.repl.co/postpage">Add a Blog Post</a>&nbsp;&nbsp;&nbsp;
+    <a href="https://Blogz.awomack333.repl.co/login">Log In</a>&nbsp;&nbsp;&nbsp;
+    <a href="https://Blogz.awomack333.repl.co/logout">Log Out</a>&nbsp;&nbsp;&nbsp;
+    <h1>Blogz</h1>
+  </header>
+
+
+  <body>
+    <h3>Create your account on this page</h3>
+    <h1>{{message}}</h1>
+    <form action='/signup' method="POST">
+      <h3>Create a Username:</h3>
+      <input type="text" name="username"></input><br>
+      <h3>Create a Password</h3>
+      <input type="password" name="password"></input>
+      <h3>Verify that Password</h3>
+      <input type="password" name="verify_password"></input><br>
+  
+      <br><input type="submit" class="subButton" name="submit" value="Sign Up"></input>
+    </form>
+    <script src="main.py"></script>
+  </body>
+
+</html>

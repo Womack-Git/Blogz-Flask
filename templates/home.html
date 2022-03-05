@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>blogz</title>
+    <!--<link href="style.css" rel="stylesheet" type="text/css" />-->
+  </head>
+
+  <header>
+    <a href="https://Blogz.awomack333.repl.co">Home Page</a>&nbsp;&nbsp;&nbsp;
+    <a href="https://Blogz.awomack333.repl.co/postpage">Add a Blog Post</a>&nbsp;&nbsp;&nbsp;
+    <a href="https://Blogz.awomack333.repl.co/login">Log In</a>&nbsp;&nbsp;&nbsp;
+    <a href="https://Blogz.awomack333.repl.co/logout">Log Out</a>&nbsp;&nbsp;&nbsp;
+    <h1>Blogz HOME</h1>
+  </header>
+   
+  <body>
+  <!--   jinja    -->
+  {% for pid, title, content, ownerid in query %}
+    <a href="https://Blogz.awomack333.repl.co/?pid={{pid}}" class="title">
+    <br><h3><b>{{title}}<b></a><br> <i>written by <a href="https://Blogz.awomack333.repl.co/singleuser?users={{ownerid}}" class="user">{{ownerid}}<i></a></h3>
+    <p>{{content}}</p>
+
+  {% endfor %}
+
+</html>
